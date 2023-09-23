@@ -1,0 +1,132 @@
+﻿body {
+    margin: 0px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-top {
+    width: 1200px;
+}
+.main-header {
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 1200px;
+}
+.header-top {
+    display: flex;
+    flex-basis: 400px;
+
+}
+
+#header-left {
+    flex-grow: 0;
+}
+
+#header-left li {
+    margin-left: 5px;
+    list-style-type: none;
+    display: inline;
+}
+
+#header-left ul {
+    padding: 0;
+}
+
+#header-left a {
+    text-decoration: none;
+    color: black;
+}
+
+#header-space {
+    flex-grow: 1;
+    max-width: 1200px;
+}
+
+#header-right li {
+    margin-left: 5px;
+    list-style-type: none;
+    display: inline;
+}
+
+#header-right ul {
+    padding: 0;
+}
+
+#header-right {
+    flex-grow: 0;
+}
+
+#header-right a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-bottom {
+    width: 1200px;
+}
+
+.header-bottom {
+    display: flex;
+    flex-basis: 400px;
+}
+
+#header-bottom-left img {
+    margin-right: 50px;
+    width: 200px;
+    height: 50px;
+}
+
+#header-bottom-left {
+    flex-grow: 0;
+}
+
+#header-bottom-mid {
+    flex-grow: 1;
+}
+
+#header-bottom-right {
+    flex-grow: 0;
+}
+
+#header-bottom-right img {
+    width: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.search-box {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Định dạng ô nhập liệu */
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+}
+
+/* Định dạng nút tìm kiếm */
+.search-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #2980b9;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
