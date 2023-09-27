@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thông báo khi nhấn nút</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: whitesmoke;
+        }
+        .background-header{
+            background-color: white;
+            border-bottom: 1px solid black;
+        }
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+        }
+
+        .menu-top {
+            width: 1200px;
+        }
+        .main-header {
+            border-radius: 2px;
+            width: 1200px;
+            background-color: white;
+        }
+        .header-top {
+            margin-top: 5px;
+            display: flex;
+            flex-basis: 400px;
+
+        }
+
+        #header-left {
+            flex-grow: 0;
+        }
+
+        #header-left li {
+            margin-left: 5px;
+            list-style-type: none;
+            display: inline;
+        }
+
+        #header-left ul {
+            padding: 0;
+        }
+
+        #header-left a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #header-space {
+            flex-grow: 1;
+            max-width: 1200px;
+        }
+
+        #header-right li {
+            margin-left: 5px;
+            list-style-type: none;
+            display: inline;
+        }
+
+        #header-right ul {
+            padding: 0;
+        }
+
+        #header-right {
+            flex-grow: 0;
+        }
+
+        #header-right a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu-bottom {
+            width: 1200px;
+        }
+
+        .header-bottom {
+            margin-top: 20px;
+            display: flex;
+            flex-basis: 400px;
+        }
+
+        #header-bottom-left img {
+            margin-right: 50px;
+            width: 200px;
+            height: 50px;
+        }
+
+        #header-bottom-left {
+            flex-grow: 0;
+        }
+
+        #header-bottom-mid {
+            flex-grow: 1;
+        }
+
+        #header-bottom-right {
+            flex-grow: 0;
+        }
+
+        #header-bottom-right img {
+            width: 50px;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .search-box {
+            margin-top: 5px;
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Định dạng ô nhập liệu */
+        .search-input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+        }
+
+        /* Định dạng nút tìm kiếm */
+        .search-button {
+            background-color: black;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #2980b9;
+        }
+
+        .search-button img {
+            width: 20px;
+            height: 20px;
+        }
+
+     </style>
+</head>
+<body>
+    <div class="background-header">
+        <div class="container main-header">
+            <div class="container menu-top">
+                <div class="header-top">
+                    <div id="header-left">
+                        <ul>
+                            <li><a href="">Mạng xã hội</a></li>
+                            <li>|</li>
+                            <li><a href="">Cộng tác viên</a></li>
+                        </ul>
+                    </div>
+                    <div id="header-space">
+
+                    </div>
+                    <div id="header-right">
+                        <ul>
+                            <li><a href="">Thông báo</a></li>
+                            <li><a href="">Hỗ trợ</a></li>
+                            <li><a href="">Ngôn ngữ</a></li>
+                            <li><a href="">Đăng ký</a></li>
+                            <li>|</li>
+                            <li><a href="">Đăng nhập</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container menu-bottom">
+                <div class="header-bottom">
+                    <header id="header-bottom-left">
+                        <img src="https://i.imgur.com/iKxVBVw.png" />
+                    </header>
+                    <div id="header-bottom-mid">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                            <button class="search-button"><img src="https://i.imgur.com/LZqwUeJ.png"></button>
+                        </div>
+                    </div>
+                    <header id="header-bottom-right">
+                        <img src="https://i.imgur.com/SRLD4L5.png">
+                    </header>
+                </div>
+                <div class="header-recommend">
+
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thông báo khi nhấn nút</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+        }
+        .menu-product-recommend{
+            border-radius: 15px;
+            padding: 10px;
+            width: 1180px;
+            background-image: url('https://i.imgur.com/likngPc.png');
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 15px; 
+
+        }
+        .product-recommend:hover{
+            border-color: black;
+            transform: translateY(-5px);
+            transition: transform 0.5s ease-in-out 0s;
+        }
+        .product-recommend{
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+            transition: border-color 0.3s;
+            width: 225px;
+            height: 350px;
+            margin-bottom: 12px;
+            background-color: white;
+            border-radius:10px;
+        }
+        .product-recommend a{
+            text-decoration: none;
+            color: black;
+        }
+        .name-product{
+            font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+
+            margin: 0; 
+            padding: 0;
+            font-size: .90rem;
+        }
+        .price-new{
+            margin-top: 15px;
+            font-size: 22px;
+            color: #C50A00;
+        }
+        .price-and-discount{
+            display: flex;
+            justify-content:center;
+            margin-top: 8px;
+        }
+        .price-old{
+            padding: 5px;
+            font-size: 16px;
+            color: #a4a4a4!important;
+        }
+        .price-and-discount small{
+            border-radius: 20px;
+            background-color:#fff0e9 ;
+            color: #eb5757;
+            padding: 5px;
+        }
+        .product-recommend-img{
+            height: 240px;
+        }
+        .product-recommend-img img{
+            border-radius:10px;
+            width: 100%;
+            height: 100%;
+        }
+        .product-recommend-text{
+            font-weight: bold;
+            padding: 7px;
+            height: fit-content;
+            text-align: center;
+
+        }
+
+     </style>
+</head>
+<body>
+    <div  class="container menu-product-recommend">
+        <!--Product-->
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://shopdunk.com/images/thumbs/0020094_iphone-15-pro-max-128gb_550.jpeg">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="name-product">iPhone 15 Pro Max 256GB</div>
+                    <div class="price-new">20.000.000₫</div>
+                    <div class="price-and-discount">
+                        <div class="price-old"><s>34.290.000₫</s></div>
+                        <small>-21%</small>
+                </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
