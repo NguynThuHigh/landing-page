@@ -4,59 +4,232 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="~/Content/Style.css" />
 </head>
 <body>
-    <div class="container main-header">
-        <div class="container menu-top">
-            <div class="header-top">
-                <div id="header-left">
-                    <ul>
-                        <li><a href="">Mạng xã hội</a></li>
-                        <li>|</li>
-                        <li><a href="">Cộng tác viên</a></li>
-                    </ul>
-                </div>
-                <div id="header-space">
+    <div class="background-header">
+        <div class="container main-header">
+            <div class="container menu-top">
+                <div class="header-top">
+                    <div id="header-left">
+                        <ul>
+                            <li><a href="">Mạng xã hội</a></li>
+                            <li>|</li>
+                            <li><a href="">Cộng tác viên</a></li>
+                        </ul>
+                    </div>
+                    <div id="header-space">
 
-                </div>
-                <div id="header-right">
-                    <ul>
-                        <li><a href="">Thông báo</a></li>
-                        <li><a href="">Hỗ trợ</a></li>
-                        <li><a href="">Ngôn ngữ</a></li>
-                        <li><a href="">Đăng ký</a></li>
-                        <li>|</li>
-                        <li><a href="">Đăng nhập</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container menu-bottom">
-            <div class="header-bottom">
-                <header id="header-bottom-left">
-                    <img src="https://i.imgur.com/iKxVBVw.png" />
-                </header>
-                <div id="header-bottom-mid">
-                    <div class="search-box">
-                        <input type="text" class="search-input" placeholder="Tìm kiếm...">
-                        <button class="search-button"><img src="https://i.imgur.com/LZqwUeJ.png"></button>
+                    </div>
+                    <div id="header-right">
+                        <ul>
+                            <li><a href="">Thông báo</a></li>
+                            <li><a href="">Hỗ trợ</a></li>
+                            <li><a href="">Ngôn ngữ</a></li>
+                            <li><a href="">Đăng ký</a></li>
+                            <li>|</li>
+                            <li><a href="">Đăng nhập</a></li>
+                        </ul>
                     </div>
                 </div>
-                <header id="header-bottom-right">
-                    <img src="https://i.imgur.com/SRLD4L5.png">
-                </header>
             </div>
-            <div class="header-recommend">
+            <div class="container menu-bottom">
+                <div class="header-bottom">
+                    <header id="header-bottom-left">
+                        <img src="https://i.imgur.com/iKxVBVw.png" />
+                    </header>
+                    <div id="header-bottom-mid">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                            <button class="search-button"><img src="https://i.imgur.com/LZqwUeJ.png"></button>
+                        </div>
+                    </div>
+                    <header id="header-bottom-right">
+                        <img src="https://i.imgur.com/SRLD4L5.png">
+                    </header>
+                </div>
+                <div class="header-recommend">
 
+                </div>
             </div>
         </div>
     </div>
-    
+    <div class="slider-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://i.imgur.com/tLUzNkY.jpg"></div>
+                <div class="swiper-slide"><img src="https://i.imgur.com/zbyizDK.jpg"></div>
+                <div class="swiper-slide"><img src="https://i.imgur.com/VoCorwM.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000, // 3 giây
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!--<div class="fixed-recommend-bar">-->
+    <div class="container recommend-bar">
+        GỢI Ý HÔM NAY
+    </div>
+    <div class="container recommend-bar-small"></div>
 
-
+    <div class="container menu-product-recommend">
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="product-recommend">
+            <a href="https://www.youtube.com/watch?v=mmuBhumw4Nk">
+                <div class="product-recommend-img">
+                    <img src="https://i.imgur.com/x3E2kOa.png">
+                </div>
+                <div class="product-recommend-text">
+                    <div class="iframe-menu-1"> <p>Quần Suông Túi Hộp chất kaki cao cấp basic nam nữ ống suông rộng, Quần lưng thun co giãn 4 màu tôn dáng, form rộng</p></div>
+                    <div class="iframe-menu-2"><p>₫99.000</p></div>
+                </div>
+            </a>
+        </div>
+    </div>
     <div>
         @RenderBody()
     </div>
