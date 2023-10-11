@@ -1,0 +1,384 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+}
+.img__main img{
+    width: 100%;
+}
+.header__color{
+    background-color: #87CEEB;
+}
+.header{
+    height: 120px;
+    width: 1200px;
+}
+.header__top{
+    display: flex;
+}
+.header__top img{
+    width: 100%;
+}
+.header__logo{
+
+}
+.header__search{
+    display: flex;
+}
+.header__search--text input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.header__search--text{
+
+    width: 500px;
+    height: 40px;
+    margin: 18px;
+}
+.header__search--img{
+    top: 24px;
+    left: -60px;
+    width: 35px;
+    position: relative;
+}
+.header__search--img button{
+    background: none;
+    border: none;
+}
+.header__search--img img{
+    width: 100%;
+}
+.header__bot img{
+    width: 20px;
+}
+.header__bot{
+
+}
+.header__bot ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10pxs;
+}
+.header__bot a{
+    text-decoration: none;
+    color: black;
+}
+.banner__topzone{
+    width: 1200px;
+}
+.banner__topzone img{
+    border-radius: 20px;
+    width: 100%;
+}
+/*slide*/
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 5px 0;
+  background: #0096FF;
+  white-space: nowrap;
+  position: relative;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+.logos-slide a{
+    font-family: 'Transducer_ExtendedBlack', sans-serif;
+    padding-left: 100px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+/*Slider*/
+.slider-container{
+    width: 1200px;
+    position: relative;
+    top:-80px;
+    border-radius: 20px;
+
+}
+.swiper{
+    margin: 0;
+    border-radius: 20px;
+    width: 1200px;
+
+}
+.flex__slide{
+    display: flex;
+
+}
+.swiper-slide img{
+    margin: 5px;
+    width: 49.4%;
+    border-radius: 20px;
+}
+
+.swiper-button-prev,.swiper-button-next{
+    /*background-color: rgba(128, 128, 128, 0.5);*/
+
+    color: white;
+    display: none;
+}
+.swiper:hover .swiper-button-prev,.swiper:hover .swiper-button-next{
+
+    display: block;
+}
+.swiper-pagination-bullet-active{
+
+    background-color: whitesmoke;
+}
+.swiper-banner{
+    flex: 1; /* Phần tử này chiếm nửa còn lại của chiều ngang của container */
+    display: flex; /* Sử dụng Flexbox để căn chỉnh hai phần tử con bên trong */
+    flex-direction: column;
+    margin-left: auto;
+}
+.swiper-banner-left{
+    flex: 1;
+    
+}
+.swiper-banner img{
+    width: 100%;
+}
+
+/*option Promo*/
+.option__promo{
+    margin-top: -50px;
+    margin-bottom: 20px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.option__promo--group{
+    border-radius: 10px;
+    background-color: white;
+    width: 275px;
+    display: flex;
+}
+.option__promo--img{
+    margin: 15px;
+    width: 45%;
+}
+.option__promo--img img{
+    width: 100%;
+}
+.option__promo--text{
+    margin-top: 20px;
+    font-size: 21px;
+}
+/*FlashSale*/
+.flashsale {
+    margin-top: 20px;
+    width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+}
+.flashsale__bar{
+    
+}
+
+.flashsale__body{
+    display: flex;
+    justify-content: space-between;
+}
+.flashsale__recommend {
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    width: 190px;   
+    background-color: white;
+    padding: 8px;
+}
+
+.flashsale__recommend a {
+    text-decoration: none;
+    color: black;
+}
+.flashsale__recommend--img {
+    height: 190px;
+}
+
+.flashsale__recommend--img img {
+    width: 100%;
+}
+
+.flashsale__recommend--text {
+     font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    text-align: center;
+    margin-top:-10px;
+    margin-bottom:10px;
+
+}
+.progress{
+    margin-left: 8px;
+    width: 90%;
+}
+/*Category*/
+.category{   
+    margin-top: 20px; 
+    width: 1200px;
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;     
+}
+.box-category{
+    background-color: white;
+    width: 158px;
+
+    padding: 20px;
+    margin-right: 2px;
+    margin-top: 2px;  
+}
+.box-category:hover{
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1), 
+                -5px 0px 10px rgba(0, 0, 0, 0.1), 
+                0px 5px 10px rgba(0, 0, 0, 0.1), 
+                0px -5px 10px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+}
+.border-category{
+    width: 80px;
+    height: 80px;
+    border-radius:80px ;
+    background-color: whitesmoke;
+}
+.item-category{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.item-category img{
+    margin-left: -76px;
+    align-self: center;
+}
+.text-category{
+    padding-top:20px;
+    text-align: center;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+/*Product*/
+
+.product-banner{
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.product-banner img{
+    border-radius: 10px;
+    border-bottom: none;
+}
+.menu-product-recommend{
+    margin-top: 20px; 
+    border-radius: 15px;
+    padding: 10px;
+    width: 1200px;
+    background-image: url('https://i.imgur.com/likngPc.png');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 15px; 
+
+}
+.product-recommend:hover{
+    border-color: black;
+    transform: translateY(-5px);
+    transition: transform 0.5s ease-in-out 0s;
+}
+.product-recommend{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s;
+    width: 225px;
+    height: auto;
+    margin-bottom: 12px;
+    background-color: white;
+    border-radius:10px;
+}
+.product-recommend a{
+    text-decoration: none;
+    color: black;
+}
+.name-product{
+    margin: 0; 
+    padding: 0;
+    font-size: .90rem;
+    display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2; /* Số dòng tối đa bạn muốn hiển thị */
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.price-new{
+    margin-top: 15px;
+    font-size: 22px;
+    color: #C50A00;
+}
+.price-and-discount{
+    display: flex;
+    justify-content:center;
+    margin-top: 8px;
+}
+.price-old{
+    padding: 5px;
+    font-size: 16px;
+    color: #a4a4a4!important;
+}
+.price-and-discount small{
+    border-radius: 20px;
+    background-color:#fff0e9 ;
+    color: #eb5757;
+    padding: 5px;
+}
+.product-recommend-img{
+    height: 240px;
+}
+.product-recommend-img img{
+    border-radius:10px;
+    width: 100%;
+    height: 100%;
+}
+.product-recommend-text{
+    font-weight: bold;
+    padding: 7px;
+
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
